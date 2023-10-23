@@ -22,7 +22,7 @@ const App = () => {
       <nav>
         <div>
           <h1>Blue Whales</h1>
-          <button onClick={func}>Get User List</button>
+          <button onClick={func} className="btn">Get User List</button>
         </div>
       </nav>
       <main>
@@ -34,7 +34,7 @@ const App = () => {
             <th>Avatar</th>
           </tr>
           {
-            (!Object.keys(obj).length && <p>No data found to display</p>)||(Object.keys(obj).length &&
+            (!Object.keys(obj).length && <p>No data found</p>)||(Object.keys(obj).length &&
             
             obj.data.data.map( profile=><>
               <tr>
